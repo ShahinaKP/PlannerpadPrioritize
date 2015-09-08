@@ -1,0 +1,137 @@
+.container-fluid{
+	padding: 0;
+}
+#mainHeader{
+	background-color: #000;
+	border-radius: 0;
+	margin-bottom: 0;
+}
+
+#viewSection{
+	background: url(../images/wood.jpg);
+	float: left;
+	width: 100%;
+}
+
+#weekLbl{
+	color: #fff;
+	padding-left: 5%;
+}
+
+#headerRgt{
+	color: #fff;
+    padding: 10px;
+}
+
+#welcomeLbl{
+	padding-right: 30px;
+}
+
+#logoutBtn{
+	cursor: pointer;
+}
+
+#prioritizeTitle{
+	background-color: #fff;
+	border-radius: 0;
+	float: left;
+	margin-bottom: 0;
+	padding: 10px;
+	width: 100%;
+}
+
+#prioritizeTitle p{
+	font-size: 24px;
+	margin: 0;
+}
+
+.leftDiv{
+	background-color: #fff;
+	float: left;
+	padding: 20px;
+	width: 30%;
+}
+
+.rightDiv{
+	float: left;
+	width: 70%;
+}
+
+.day{
+	background-color: #fff;
+	float: left;
+	min-height: 100px;
+	margin: 2%;
+	width: 44%;	
+}
+
+/*.day:nth-child(even){
+	float: right;
+}*/
+
+.sunday{
+	background-color: #fff;
+	float: left;
+	min-height: 100px;
+	margin: 2%;
+	width: 92%;	
+}
+
+#leftList ul li{
+	cursor: move;
+}
+
+[ng-drag]{
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+[ng-drag]{   
+    color:black;
+    text-align: center;
+    padding-top:10px;
+    display: inline-block;
+    margin:0 10px;
+    cursor: move;
+}
+
+[ng-drag].drag-over{
+    border:solid 1px red;
+}
+[ng-drag].dragging{
+    opacity: 0.5;
+}
+[ng-drop]{
+    text-align: left;    
+    /*padding-top:40px;
+    display: block;
+    position: relative;*/
+    float: left;
+    min-height: 50px;
+    width: 100%;
+}
+[ng-drop].drag-enter{
+    border:solid 2px #cccccc;
+}
+[ng-drop] span.title{
+    display: block;
+    position: absolute;
+    top:50%;
+    left:50%;   
+    margin-left: -100px;
+    margin-top: -10px;
+}
+[ng-drop] div{
+    position: relative;
+    z-index: 2;
+}
+
+span#date {
+    float: left;
+    padding: 10px;
+}
+
+
+

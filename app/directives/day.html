@@ -1,0 +1,5 @@
+<span id="date">{{day}}</span>
+<ul ng-drop="true" ng-drop-success="onDropComplete($data,$event)">
+	<li ng-repeat="droppedObject in droppedObjects">{{droppedObject.activityName}}</li>
+	<li ng-hide="droppedObjects.length">No activities</li>
+</ul>
